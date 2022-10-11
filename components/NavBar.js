@@ -4,7 +4,12 @@ export default function NavBar() {
 
     return (
         <>
-            <h1>Here lays the Navbar.</h1>
+          <div>
+            <h1>Ikigai</h1>
+            <h2>Home</h2>
+            <h2>About us</h2>
+            <h2>Learn</h2>
+          </div>
         </>
     )
 }
