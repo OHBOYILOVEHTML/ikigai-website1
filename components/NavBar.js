@@ -8,10 +8,10 @@ export default function NavBar() {
   // </div>
 //learn --> blog, videos, lessons
   //EMPTY DIVS ARE IMPORTANT PLS DONT MAKE ME REMOVE THEM
-
+// <Image className=""><\Image>
     return (
         <>
-          <header className="bg-purple flex flex-row font-mono py-2 justify-between items-center sticky top-0 z-50">
+          <header className="bg-gradient-to-r from-purple to-blue flex flex-row font-mono py-2 justify-between items-center fixed w-full">
             <div className="flex flex-row">
               <div className="py-2 flex flex-row text-white">
                 <a className="font-bold px-4 text-2xl" href="google.com">Ikigai</a>
