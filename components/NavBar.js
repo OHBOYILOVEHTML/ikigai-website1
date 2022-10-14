@@ -13,7 +13,7 @@ export default function NavBar() {
         <>
           <header className="bg-gradient-to-r from-purple to-blue flex flex-row font-mono py-2 justify-between items-center fixed w-full">
             <div className="flex flex-row">
-            <div className="px-1 py-1">
+            <div className="px-1">
               <Image src={profilepic} width="50" height="50"/>
             </div>
               <div className="py-3 flex flex-row text-white">
