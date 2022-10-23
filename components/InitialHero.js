@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function InitialHero() {
     return (
         <>
-            <section className="w-screen items-center p-9 bg-metal text-white">
+            <section className="w-screen items-center p-9 text-black">
                 <div className="flex flex-col text-center p-9 md:flex-row md:text-left">
-                    <div>
+                    <div className='p-9'>
                         <div className=''><h2>New Blog Post Out Now</h2></div>
                         <h1 className="text-9xl font-bold">Ikigai</h1>
                         <h2 className="text-4xl pt-5">A conceptual project by LoveNils</h2>
