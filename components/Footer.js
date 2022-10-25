@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import logo from '../images/logo.png';
 
-export default function NavBar() {
+export default function Footer() {
     return (
       <>
         <div className="bg-teal-300 px-9 text-black">

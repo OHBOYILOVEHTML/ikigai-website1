@@ -11,10 +11,10 @@ export default function NavBar() {
 // <Image className=""><\Image>
     return (
         <>
-          <header className="bg-teal-300 flex flex-row py-2 justify-between items-center fixed w-full">
+          <header className="bg-teal-300 flex flex-row py-2 justify-between items-center fixed w-full z-10">
             <div className="flex flex-row">
             <div className="px-1">
-              <Image src={logo} width="50" height="50"/>
+              <Image src={logo} width="50" height="50" alt="Our logo"/>
             </div>
               <div className="py-3 flex flex-row text-black">
                 <a className="font-bold px-4 text-2xl" href="/">Ikigai</a>
