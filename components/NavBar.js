@@ -11,19 +11,19 @@ export default function NavBar() {
 // <Image className=""><\Image>
     return (
         <>
-          <header className="bg-gradient-to-r from-purple to-blue flex flex-row font-mono py-2 justify-between items-center fixed w-full">
+          <header className="bg-teal-300 flex flex-row py-2 justify-between items-center fixed w-full">
             <div className="flex flex-row">
             <div className="px-1">
               <Image src={profilepic} width="50" height="50"/>
             </div>
-              <div className="py-3 flex flex-row text-white">
+              <div className="py-3 flex flex-row text-black">
                 <a className="font-bold px-4 text-2xl" href="google.com">Ikigai</a>
               </div>
             </div>
             <div></div>
             <div></div>
             <div></div>
-            <div className="text-white flex flex-row py-3 items justify-left">
+            <div className="text-black flex flex-row py-3 items justify-left">
               <a className="hover:font-bold px-10 text-xl" href="google.com">Home</a>
               <a className="hover:font-bold px-10 text-xl" href="google.com">About us</a>
               <a className="hover:font-bold px-10 text-xl" href="google.com">Learn</a>
