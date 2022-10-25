@@ -11,20 +11,20 @@ export default function NavBar() {
 // <Image className=""><\Image>
     return (
         <>
-          <header className="bg-teal-300 flex flex-row py-2 justify-between items-center fixed w-full z-10">
+          <header className="bg-white flex flex-row py-2 justify-between items-center fixed w-full z-10">
             <div className="flex flex-row">
             <div className="px-1">
               <Image src={logo} width="50" height="50" alt="Our logo"/>
             </div>
-              <div className="py-3 flex flex-row text-black">
+              <div className="py-3 flex flex-row text-red-500">
                 <a className="font-bold px-4 text-2xl" href="/">Ikigai</a>
               </div>
             </div>
             <div></div>
             <div></div>
             <div></div>
-            <div className="text-black flex flex-row py-3 items justify-left">
-              <a className="hover:font-bold px-10 text-xl" href="google.com">Home</a>
+            <div className="text-red-500 flex flex-row py-3 items justify-left">
+              <a className="hover:font-bold px-10 text-xl" href="/">Home</a>
               <a className="hover:font-bold px-10 text-xl" href="google.com">About us</a>
               <a className="hover:font-bold px-10 text-xl" href="google.com">Learn</a>
               <a className="hover:font-bold px-10 text-xl" href="google.com">Blog</a>

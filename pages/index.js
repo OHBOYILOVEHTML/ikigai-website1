@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='content-center bg-sky-300 font-mono overflow-x-hidden'>
+      <main className='content-center bg-red-500 font-mono overflow-x-hidden'>
         <div><NavBar /></div>
         <div>
           <InitialHero />
