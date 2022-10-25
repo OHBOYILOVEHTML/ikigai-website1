@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import cocaColaLongLogo from '../images/cocaColaLongLogo.svg';
+import logo from '../images/logo.png';
 
 export default function NavBar() {
     return (
@@ -10,7 +10,7 @@ export default function NavBar() {
         <div className="bg-teal-300 px-9 text-black">
             <div className="flex flex-col p-9 gap-x-64 items-center justify-between lg:flex-row">
                 <div className="flex flex-col">
-                    <div className="w-48"><Image src={cocaColaLongLogo} alt="Ikigai Logo" /></div>
+                    <div className="w-48"><Image src={logo} alt="Ikigai Logo" /></div>
                     <p>Ikigai Project By Lovenils</p>
                 </div>
                 <div className="px-9 flex flex-row gap-x-20">
