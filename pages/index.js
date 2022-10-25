@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import NavBar from '../components/NavBar';
 import InitialHero from '../components/InitialHero';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -12,13 +13,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='content-center'>
-        <NavBar />
+      <main className='content-center bg-teal-200 font-mono'>
+        <div><NavBar /></div>
         <div>
           <InitialHero />
         </div>
         <div>
-          
+          <Footer />
         </div>
 
       </main>
