@@ -1,7 +1,7 @@
 // James Make Edits in Here- Create the Navbar- https://tailwindcss.com/docs/installation (See this for styling details)
 import Image from 'next/image'
 import Link from 'next/link'
-import profilepic from '/public/favicon.ico'
+import logo from '/images/logo.png'
 export default function NavBar() {
   // <div>
   //   <Image src={profilepic} className=""/>
@@ -11,13 +11,13 @@ export default function NavBar() {
 // <Image className=""><\Image>
     return (
         <>
-          <header className="bg-teal-300 flex flex-row py-2 justify-between items-center fixed w-full">
+          <header className="bg-teal-300 flex flex-row py-2 justify-between items-center fixed w-full z-10">
             <div className="flex flex-row">
             <div className="px-1">
-              <Image src={profilepic} width="50" height="50"/>
+              <Image src={logo} width="50" height="50" alt="Our logo"/>
             </div>
               <div className="py-3 flex flex-row text-black">
-                <a className="font-bold px-4 text-2xl" href="google.com">Ikigai</a>
+                <a className="font-bold px-4 text-2xl" href="/">Ikigai</a>
               </div>
             </div>
             <div></div>
