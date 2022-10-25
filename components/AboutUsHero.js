@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function InitialHero() {
+export default function AboutUsHero() {
     return (
         <>
             <section className="w-screen items-center p-9 text-black">
