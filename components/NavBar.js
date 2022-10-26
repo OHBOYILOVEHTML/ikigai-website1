@@ -16,14 +16,14 @@ export default function NavBar() {
             <div className="px-1">
               <Image src={logo} width="50" height="50" alt="Our logo"/>
             </div>
-              <div className="py-3 flex flex-row text-red-500">
+              <div className="py-3 flex flex-row text-red-600">
                 <a className="font-sans font-bold px-4 text-2xl" href="/">IKIGAI</a>
               </div>
             </div>
             <div></div>
             <div></div>
             <div></div>
-            <div className="font-sans font-bold text-red-500 flex flex-row py-3 items justify-left">
+            <div className="font-sans font-bold text-red-600 flex flex-row py-3 items justify-left">
               <a className="hover:drop-shadow px-10 text-l" href="/">HOME</a>
               <a className="hover:drop-shadow px-10 text-l" href="/aboutus">ABOUT US</a>
               <a className="hover:drop-shadow px-10 text-l" href="/learn">LEARN</a>

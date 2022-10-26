@@ -7,7 +7,7 @@ import logo from '../images/logo.png';
 export default function Footer() {
     return (
       <>
-        <div className="bg-gray-100 px-9 text-black">
+        <div className="bg-white px-9 text-black">
             <div className="flex flex-col p-9 gap-x-64 items-center justify-between lg:flex-row">
                 <div className="flex flex-col">
                     <div className="w-48"><Image src={logo} alt="Ikigai Logo" /></div>
