@@ -17,17 +17,17 @@ export default function NavBar() {
               <Image src={logo} width="50" height="50" alt="Our logo"/>
             </div>
               <div className="py-3 flex flex-row text-red-500">
-                <a className="font-bold px-4 text-2xl" href="/">Ikigai</a>
+                <a className="font-sans font-bold px-4 text-2xl" href="/">IKIGAI</a>
               </div>
             </div>
             <div></div>
             <div></div>
             <div></div>
-            <div className="text-red-500 flex flex-row py-3 items justify-left">
-              <a className="hover:font-bold px-10 text-xl" href="/">Home</a>
-              <a className="hover:font-bold px-10 text-xl" href="google.com">About us</a>
-              <a className="hover:font-bold px-10 text-xl" href="google.com">Learn</a>
-              <a className="hover:font-bold px-10 text-xl" href="google.com">Blog</a>
+            <div className="font-sans font-bold text-red-500 flex flex-row py-3 items justify-left">
+              <a className="hover:drop-shadow px-10 text-l" href="/">HOME</a>
+              <a className="hover:drop-shadow px-10 text-l" href="google.com">ABOUT US</a>
+              <a className="hover:drop-shadow px-10 text-l" href="google.com">LEARN</a>
+              <a className="hover:drop-shadow px-10 text-l" href="google.com">BLOG</a>
             </div>
             <div></div>
             <div></div>

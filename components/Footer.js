@@ -7,13 +7,13 @@ import logo from '../images/logo.png';
 export default function Footer() {
     return (
       <>
-        <div className="bg-sky-400 px-9 text-black">
-            <div className="flex flex-col p-9 gap-x-64 items-center justify-between lg:flex-row">
+        <div className="bg-gray-100 px-9 text-black">
+            <div className="flex flex-col p-9 items-center justify-between lg:flex-row">
                 <div className="flex flex-col">
                     <div className="w-48"><Image src={logo} alt="Ikigai Logo" /></div>
                     <p>Ikigai Project By Lovenils</p>
                 </div>
-                <div className="px-9 flex flex-row gap-x-20">
+                <div className="px-5 flex flex-row gap-x-40">
                     <div className="flex flex-col pt-5">
                         <h1 className="font-bold"><Link href='/'>Home</Link></h1>
                         <Link href=''>For Donations</Link>
