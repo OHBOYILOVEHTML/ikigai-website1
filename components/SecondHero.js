@@ -17,7 +17,7 @@ function SecondHero() {
 
     return (
         <>
-            <div className={styling}>
+            <div className={styling} id="aboutus">
                 <div className="flex flex-col">
                     <h2 className="">{h2Content}</h2>
                     <h1>{h1Content}</h1>

@@ -2,11 +2,11 @@ import Head from 'next/head';
 
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import Blog from '../components/Blog';
+import BlogPage from '../components/BlogPage';
 
-export default function Home() {
+export default function Blog() {
   return (
-    <div >
+    <div>
       <Head>
         <title>Ikigai</title>
         <meta name="description" content="Charity Project" />
@@ -16,7 +16,7 @@ export default function Home() {
       <main className='content-center bg-gradient-to-r from-red-600 to-red-500 font-mono overflow-x-hidden'>
         <div><NavBar /></div>
         <div>
-          <Blog />
+          <BlogPage />
         </div>
         <div>
           <Footer />
