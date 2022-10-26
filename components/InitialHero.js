@@ -19,8 +19,9 @@ export default function InitialHero() {
                                     <h1 className="text-9xl font-bold">IKIGAI</h1>
                                     <h2 className="text-4xl pt-5">A conceptual project by LoveNils</h2>
                                     <div className='pt-5 flex flex-col gap-y-3 md:flex-row md:gap-x-5'>
-                                        <Link href={loveNilsLink}><button className='rounded-md px-6 bg-sky-200 border-black'>Learn more</button></Link>
-                                        <button className='py-3 px-4 rounded-sm border border-white'>Explore</button>
+                                        
+                                        <Link href={"/blog"}><button className='rounded-md py-3 px-4 border-black hover:bg-gray-200'>Explore</button></Link>
+                                        <Link href={"/aboutus"}><button className='rounded-md px-6 bg-red-200 border-black hover:bg-red-500'>Learn more</button></Link>
                                     </div>
                                 </div>
                             </div>
