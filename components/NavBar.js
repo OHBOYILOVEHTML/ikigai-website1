@@ -25,9 +25,9 @@ export default function NavBar() {
             <div></div>
             <div className="font-sans font-bold text-red-500 flex flex-row py-3 items justify-left">
               <a className="hover:drop-shadow px-10 text-l" href="/">HOME</a>
-              <a className="hover:drop-shadow px-10 text-l" href="google.com">ABOUT US</a>
-              <a className="hover:drop-shadow px-10 text-l" href="google.com">LEARN</a>
-              <a className="hover:drop-shadow px-10 text-l" href="google.com">BLOG</a>
+              <a className="hover:drop-shadow px-10 text-l" href="/aboutus">ABOUT US</a>
+              <a className="hover:drop-shadow px-10 text-l" href="/learn">LEARN</a>
+              <a className="hover:drop-shadow px-10 text-l" href="/blog">BLOG</a>
             </div>
             <div></div>
             <div></div>
