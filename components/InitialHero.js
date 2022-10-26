@@ -20,7 +20,7 @@ export default function InitialHero() {
                                     <div className='pt-8 flex flex-col gap-y-3 md:flex-row md:gap-x-10 justify-center leading-7'>
                                         
                                         <Link href={"/blog"}><button className='font-semibold rounded-md py-3 px-4 border-black hover:bg-gray-200'>Explore</button></Link>
-                                        <Link href={"/aboutus"}><button className='rounded-md px-6 bg-red-200 border-black hover:bg-red-500'>Learn more</button></Link>
+                                        <Link href={"/aboutus"}><button className='rounded-md text-white px-6 bg-red-400 border-black hover:bg-red-500'>Learn more</button></Link>
                                     </div>
                             </div>
                         </div>
