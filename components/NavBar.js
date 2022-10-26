@@ -11,7 +11,7 @@ export default function NavBar() {
 // <Image className=""><\Image>
     return (
         <>
-          <header className="bg-white flex flex-row py-2 justify-between items-center fixed w-full z-10">
+          <header className="bg-white flex flex-row py-2 justify-between items-center fixed w-full z-10 drop-shadow">
             <div className="flex flex-row">
             <div className="px-1">
               <Image src={logo} width="50" height="50" alt="Our logo"/>
