@@ -7,7 +7,7 @@ import SecondHero from '../components/SecondHero';
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Head>
         <title>Ikigai</title>
         <meta name="description" content="Charity Project" />
