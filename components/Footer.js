@@ -12,18 +12,17 @@ export default function Footer() {
   const donationsLink = "https://www.lovenils.org/donate";
   const volunteersLink = "https://www.lovenils.org/volunteer";
   const privacyPolicy = "https://www.lovenils.org/privacy-policy";
-  const thing = "flex flex-col";
   return (
     <>
-      <div className="bg-white px-9 text-black" id="test">
-        <div className="flex flex-col p-9 gap-x-1 sm:gap-x-15 md:gap-x-25 lg:gap-x-40 items-center justify-between lg:flex-row">
-          <div className={thing}>
-            <div className="w-48">
+      <div className="bg-white px-9 md:px-1 text-black">
+        <div className="flex flex-col md:flex-row lg:flex-row p-9 gap-x-1 sm:gap-x-15 md:gap-x-20 lg:gap-x-40 items-center justify-between">
+          <div className="flex flex-col">
+            <div className="w-48 md:w-24 lg:w-48">
               <Image src={logo} alt="Ikigai Logo" />
             </div>
             <p>Ikigai Project By Lovenils</p>
           </div>
-          <div className="flex flex-row gap-x-1 sm:gap-x-20 md:gap-x-30 lg:gap-x-40">
+          <div className="flex flex-col md:flex-row lg:flex-row gap-x-1 md:gap-x-20 lg:gap-x-20">
             <div className="flex flex-col pt-5">
               <h1 className="font-bold">
                 <Link href="/">Home</Link>
