@@ -6,7 +6,7 @@ export default function InitialHero() {
   var message = "New blog post out now!";
   return (
     <>
-      <section className="relative flex min-h-screen flex-row justify-center py-20 overflow-hidden">
+      <section className="relative flex min-h-screen flex-row justify-center md:justify-start py-20 overflow-hidden">
         <div className="font-sans flex flex-col p-10 md:flex-row md:text-left">
           <div className="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
             <div className="mx-auto max-w-md">
@@ -24,9 +24,13 @@ export default function InitialHero() {
                       Explore
                     </button>
                   </Link>
-                    <button type="button" onclick="document.getElementById('aboutus').scrollIntoView({behavior: 'smooth'})" className="rounded-md text-white px-6 bg-red-400 border-solid hover:bg-red-500">
-                      Learn more
-                    </button>
+                  <button
+                    type="button"
+                    onclick="document.getElementById('aboutus').scrollIntoView({behavior: 'smooth'})"
+                    className="rounded-md text-white px-6 bg-red-400 border-solid hover:bg-red-500"
+                  >
+                    Learn more
+                  </button>
                 </div>
               </div>
             </div>

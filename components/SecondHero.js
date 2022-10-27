@@ -8,10 +8,10 @@ function SecondHero() {
     "flex flex-col p-14 m-9 bg-white rounded-xl justify-center lg:flex-row"
   );
 
-  const h2Content = "Educating Children Through In-person and Online Events";
-  const h1Content = "What do we do?";
+  const h2Content = "Lorem Ipsum";
+  const h1Content = "Dolor sit amet";
   const pContent =
-    "We host events for children to explore science, technology and lots of fun things like lego and such";
+    "Consectetur adipiscing elit. Phasellus facilisis vel sapien ac ullamcorper. Sed congue dolor nibh, finibus aliquet libero sagittis vel. Maecenas eleifend, sapien at dignissim porttitor, felis lorem posuere eros, nec placerat velit nibh ut est. Nunc gravida tellus porta velit sagittis pellentesque.";
 
   function change() {
     setStyling(

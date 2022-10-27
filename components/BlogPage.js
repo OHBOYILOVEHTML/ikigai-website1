@@ -13,7 +13,7 @@ export default function Blog() {
               <div class="divide-y divide-gray-300/50">
                 <div className="p-9 space-y-3 text-base leading-7 text-gray-900">
                   <div className="">
-                    <h2>Hello</h2>
+                    <h2>Giggity</h2>
                   </div>
                   <h1 className="text-9xl font-bold">BLOG</h1>
                   <h2 className="text-4xl">A conceptual project by LoveNils</h2>
