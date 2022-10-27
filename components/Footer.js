@@ -16,12 +16,12 @@ export default function Footer() {
     return (
       <>
         <div className="bg-white px-9 text-black" id="test">
-            <div className="flex flex-col p-9 gap-x-64 items-center justify-between lg:flex-row">
+            <div className="flex flex-col p-9 gap-x-1 sm:gap-x-15 md:gap-x-25 lg:gap-x-40 items-center justify-between lg:flex-row">
                 <div className={thing}>
                     <div className="w-48"><Image src={logo} alt="Ikigai Logo" /></div>
                     <p>Ikigai Project By Lovenils</p>
                 </div>
-                <div className="px-5 flex flex-row gap-x-40">
+                <div className="flex flex-row gap-x-1 sm:gap-x-20 md:gap-x-30 lg:gap-x-40">
                     <div className="flex flex-col pt-5">
                         <h1 className="font-bold"><Link href='/'>Home</Link></h1>
                         <Link href={donationsLink}>For Donations</Link>
