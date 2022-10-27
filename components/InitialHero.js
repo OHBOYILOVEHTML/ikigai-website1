@@ -4,6 +4,12 @@ import Link from "next/link";
 
 export default function InitialHero() {
   var message = "New blog post out now!";
+  function scroll(){
+    if (typeof window === 'object') {
+      document.getElementById('aboutus').scrollIntoView({behavior: 'smooth'})
+    }
+
+  }
   return (
     <>
       <section className="relative flex min-h-screen flex-row justify-center md:justify-start py-20 overflow-hidden">
@@ -26,7 +32,7 @@ export default function InitialHero() {
                   </Link>
                   <button
                     type="button"
-                    onclick="document.getElementById('aboutus').scrollIntoView({behavior: 'smooth'})"
+                    onClick={scroll}
                     className="rounded-md text-white px-6 bg-red-400 border-solid hover:bg-red-500"
                   >
                     Learn more
