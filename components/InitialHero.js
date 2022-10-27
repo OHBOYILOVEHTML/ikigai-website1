@@ -24,11 +24,9 @@ export default function InitialHero() {
                       Explore
                     </button>
                   </Link>
-                  <Link href={"#aboutus"}>
-                    <button className="rounded-md text-white px-6 bg-red-400 border-solid hover:bg-red-500">
+                    <button type="button" onclick="document.getElementById('aboutus').scrollIntoView({behavior: 'smooth'})" className="rounded-md text-white px-6 bg-red-400 border-solid hover:bg-red-500">
                       Learn more
                     </button>
-                  </Link>
                 </div>
               </div>
             </div>
