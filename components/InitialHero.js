@@ -4,11 +4,10 @@ import Link from "next/link";
 
 export default function InitialHero() {
   var message = "New blog post out now!";
-  function scroll(){
-    if (typeof window === 'object') {
-      document.getElementById('aboutus').scrollIntoView({behavior: 'smooth'})
+  function scroll() {
+    if (typeof window === "object") {
+      document.getElementById("aboutus").scrollIntoView({ behavior: "smooth" });
     }
-
   }
   return (
     <>

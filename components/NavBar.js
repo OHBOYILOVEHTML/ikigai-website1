@@ -2,9 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/logo.webp";
 export default function NavBar() {
-
-  //NavBar Responsiveness still not complete - please do not attempt to edit the header
-  //pr-5 makes navbar not against side of phones
+  //edit from px-5 to pr-5: makes navbar not against side of phones
   return (
     <>
       <header className="bg-white grid grid-cols-2 sm:grid-cols-3 py-2 fixed items-center w-full z-10 drop-shadow ">
