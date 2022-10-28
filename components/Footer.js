@@ -14,7 +14,7 @@ export default function Footer() {
   const privacyPolicy = "https://www.lovenils.org/privacy-policy";
   return (
     <>
-      <div className="bg-white px-9 md:px-1 text-black">
+      <div className="bg-white px-9 md:px-1 text-black text-center md:text-left">
         <div className="flex flex-col md:flex-row lg:flex-row p-9 gap-x-1 sm:gap-x-15 md:gap-x-20 lg:gap-x-40 items-center justify-between">
           <div className="flex flex-col">
             <div className="w-48 md:w-24 lg:w-48">
