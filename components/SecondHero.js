@@ -22,7 +22,7 @@ function SecondHero() {
   return (
     <>
       <div className={styling} id="aboutus">
-        <div className="flex flex-col">
+        <div className="flex grid grid-cols-2">
           <h2 className="">{h2Content}</h2>
           <h1>{h1Content}</h1>
           <p>{pContent}</p>

@@ -5,7 +5,7 @@ import InitialHero from "../components/InitialHero";
 
 
 export default function Blog() {
-  //content is a 2d array --> content[k] is a list containing 4 items, title of post, author of post, date of post, body text of post
+  //content is a 2d array --> content[k] is a list containing 4 items, title of post, author of post, date of post, body text of post (IN THAT ORDER)
   var list=[
     ["Science","Zach Masserella","22/10/22","Hello i am Zach"],
     ["Code","James Masserella","35/10/22","Hello i am not Zach"],
@@ -14,16 +14,25 @@ export default function Blog() {
   ]
   function blogPost(list){
     var title=list[0];
-    var date=list[1];
-    var author=list[2];
+    var author=list[1];
+    var date=list[2];
     var body=list[3];
+    //HTML for each individual blog post below
     return (
-      <div class="bg-white px-6 pt-10 pb-8 shadow-xl sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10 w-full">
+      <div className="bg-white px-6 pt-8 pb-8 shadow-xl sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10 w-full">
         <div>
-          <h1 className="text-2xl">{title}</h1>
-          <h1 className="text-xl">{date}</h1>
-          <h1 className="text-xl">{author}</h1>
-          <p>{body}</p>
+          <div className="grid grid-cols-2">
+            <div className="flex flex-col">
+              <h1 className="text-3xl text-bold">{title}</h1>
+              <h1 className="text-lg italic">By {author}</h1>
+            </div>
+            <div className="flex flex-row justify-self-end">
+              <h1 className="text-xl">{date}</h1>
+            </div>
+          </div>
+          <div>
+            <p>{body}</p>
+          </div>
         </div>
       </div>
     );
