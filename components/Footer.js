@@ -12,6 +12,7 @@ export default function Footer() {
   const donationsLink = "https://www.lovenils.org/donate";
   const volunteersLink = "https://www.lovenils.org/volunteer";
   const privacyPolicy = "https://www.lovenils.org/privacy-policy";
+
   return (
     <>
       <div className="bg-white px-9 md:px-1 text-black text-center md:text-left">
@@ -43,7 +44,6 @@ export default function Footer() {
               <h1 className="font-bold">
                 <Link href="/">Home</Link>
               </h1>
-              <Link href="/aboutus">About Us</Link>
               <Link href="/learn">Learn</Link>
               <Link href="/blog">Blog</Link>
             </div>

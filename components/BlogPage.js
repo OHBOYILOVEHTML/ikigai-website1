@@ -8,9 +8,7 @@ export default function Blog() {
   //content is a 2d array --> content[k] is a list containing 4 items, title of post, author of post, date of post, body text of post (IN THAT ORDER)
   var list=[
     ["Science","Zach Masserella","22/10/22","Hello i am Zach"],
-    ["Code","James Masserella","35/10/22","Hello i am not Zach"],
-    ["Shrek","Haryy Masserella","34/10/22","Hello i am not Zach"],
-    ["Shrek","Haryy Masserella","34/10/22","Hello i am not Zach"]
+    ["Code","Zach Masserella","01/11/22","The website blog works"]
   ]
   function blogPost(list){
     var title=list[0];

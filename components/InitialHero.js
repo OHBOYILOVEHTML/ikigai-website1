@@ -1,14 +1,14 @@
 import Link from "next/link";
 
 //import exampleCharity1 from '../images/exampleCharity1.jpg';
+function scroll() {
+  if (typeof window === "object") {
+    document.getElementById("aboutus").scrollIntoView({ behavior: "smooth" });
+  }
+}
 
 export default function InitialHero() {
   var message = "New blog post out now!";
-  function scroll() {
-    if (typeof window === "object") {
-      document.getElementById("aboutus").scrollIntoView({ behavior: "smooth" });
-    }
-  }
   return (
     <>
       <section className="relative flex min-h-screen flex-row justify-center md:justify-start py-20 overflow-hidden">
