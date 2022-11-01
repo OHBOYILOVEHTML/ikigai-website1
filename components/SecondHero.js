@@ -4,32 +4,23 @@ import React, { useState } from "react";
 import exampleCharity1 from "../images/exampleCharity1.jpg";
 
 function SecondHero() {
-  const [styling, setStyling] = useState(
-    "flex flex-col p-14 m-9 bg-white rounded-xl justify-center lg:flex-row"
-  );
 
-  const h2Content = "Lorem Ipsum";
-  const h1Content = "Dolor sit amet";
+  const h1Content = "About Us";
+  const h2Content = "";
   const pContent =
-    "Consectetur adipiscing elit. Phasellus facilisis vel sapien ac ullamcorper. Sed congue dolor nibh, finibus aliquet libero sagittis vel. Maecenas eleifend, sapien at dignissim porttitor, felis lorem posuere eros, nec placerat velit nibh ut est. Nunc gravida tellus porta velit sagittis pellentesque.";
-
-  function change() {
-    setStyling(
-      "flex flex-col p-14 m-9 bg-slate-900 rounded-xl justify-center duration-1000 lg:flex-row"
-    );
-  }
+    "The Ikigai Project represents our endeavour to conduct enrichment activities for underprivileged children, granting them access to educational experiences and opportunities that will greatly benefit them in the long run. The project unites passion, love and creativity through the interactive sessions carried out by our very own students. These sessions are carried out both online (such as coding) and on campus. The on-site sessions involve an in-person coding camps, a science day and a \"Learn with LEGO\" event. To execute these various classes, we require funds to purchase the necessary equipment and obtain the sufficient resources. We would be incredibly grateful if we could use this website to raise awareness!"
 
   return (
     <>
-      <div className={styling} id="aboutus">
+      <div className="flex flex-col p-14 m-9 bg-white rounded-xl justify-center lg:flex-row" id="aboutus">
         <div className="flex grid grid-cols-2">
-          <h2 className="">{h2Content}</h2>
-          <h1>{h1Content}</h1>
-          <p>{pContent}</p>
-          <button onClick={change}>Click me</button>
-        </div>
-        <div className="w-1/4">
-          <Image src={exampleCharity1} alt="Example test Image" />
+          <div>
+            <h1 className="font-bold text-3xl pb-5">{h1Content}</h1>
+            <p>{pContent}</p>
+          </div>
+          <div className="w-1/2 justify-self-end">
+            <Image src={exampleCharity1} alt="Example test Image"/>
+          </div>
         </div>
       </div>
     </>
