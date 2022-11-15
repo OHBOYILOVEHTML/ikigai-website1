@@ -9,7 +9,7 @@ export default function Footer() {
   const facebookLink = "https://www.facebook.com/LOVENILS/";
   const linkedinLink = "https://www.linkedin.com/company/lovenils/";
   const lovenilsLink = "https://www.lovenils.org/";
-  const donationsLink = "https://www.lovenils.org/donate";
+  const donationsLink = "https://www.giving.sg/campaigns/theikigaiproject2023";
   const volunteersLink = "https://www.lovenils.org/volunteer";
   const privacyPolicy = "https://www.lovenils.org/privacy-policy";
 

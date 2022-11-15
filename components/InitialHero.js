@@ -11,7 +11,7 @@ export default function InitialHero() {
   var message = "New blog post out now!";
   return (
     <>
-      <section className="relative flex min-h-screen flex-row justify-center md:justify-start py-20 overflow-hidden">
+      <section className="relative flex min-h-screen flex-row justify-center md:justify-start pt-20 overflow-hidden">
         <div className="font-sans flex flex-col p-10 md:flex-row md:text-left">
           <div className="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
             <div className="mx-auto max-w-md">
@@ -20,7 +20,7 @@ export default function InitialHero() {
                   <div className="">
                     <h2>{message}</h2>
                   </div>
-                  <h1 className="text-9xl font-bold">IKIGAI</h1>
+                  <h1 className="text-8xl font-bold">THE IKIGAI PROJECT</h1>
                   <h2 className="text-4xl">A conceptual project by LoveNils</h2>
                 </div>
                 <div className="pt-8 flex flex-col gap-y-3 md:flex-row md:gap-x-10 justify-center leading-7">
