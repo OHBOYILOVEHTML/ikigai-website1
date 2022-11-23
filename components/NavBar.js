@@ -5,7 +5,7 @@ export default function NavBar() {
   //edit from px-5 to pr-5: makes navbar not against side of phones
   return (
     <>
-      <header className="bg-white grid grid-cols-2 sm:grid-cols-3 py-2 fixed items-center w-full z-10 drop-shadow ">
+      <header className="bg-white grid grid-cols-2 md:grid-cols-3 sm:grid-cols-3 py-2 fixed items-center w-full z-10 drop-shadow ">
         <div className="flex flex-row font-sans font-bold text-red-600">
           <Image src={logo} width="50" height="50" alt="Our logo" />
           <a className="px-2 py-3 text-2xl" href="/">
