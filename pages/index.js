@@ -1,10 +1,10 @@
-import Head from 'next/head';
+import Head from "next/head";
 
-import NavBar from '../components/NavBar';
-import InitialHero from '../components/InitialHero';
-import Footer from '../components/Footer';
-import SecondHero from '../components/SecondHero';
-import ThirdHero from '../components/ThirdHero';
+import NavBar from "../components/NavBar";
+import InitialHero from "../components/InitialHero";
+import Footer from "../components/Footer";
+import SecondHero from "../components/SecondHero";
+import ThirdHero from "../components/ThirdHero";
 
 export default function Home() {
   return (
@@ -14,9 +14,10 @@ export default function Home() {
         <meta name="description" content="Charity Project" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className='content-center bg-gradient-to-r from-red-600 to-red-500 font-mono overflow-x-hidden'>
-        <div><NavBar /></div>
+      <main class="gradientbackground font-sans overflow-x-hidden">
+        <div>
+          <NavBar />
+        </div>
         <div>
           <InitialHero />
           <SecondHero />
@@ -25,8 +26,7 @@ export default function Home() {
         <div>
           <Footer />
         </div>
-
       </main>
     </div>
-  )
+  );
 }

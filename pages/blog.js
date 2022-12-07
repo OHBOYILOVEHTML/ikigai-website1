@@ -1,8 +1,8 @@
-import Head from 'next/head';
+import Head from "next/head";
 
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
-import BlogPage from '../components/BlogPage';
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import BlogPage from "../components/BlogPage";
 
 export default function Blog() {
   return (
@@ -13,16 +13,17 @@ export default function Blog() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='content-center bg-gradient-to-r from-red-600 to-red-500 font-mono overflow-x-hidden'>
-        <div><NavBar /></div>
+      <main className="gradientbackground content-center font-mono overflow-x-hidden">
+        <div>
+          <NavBar />
+        </div>
         <div>
           <BlogPage />
         </div>
         <div>
           <Footer />
         </div>
-
       </main>
     </div>
-  )
+  );
 }

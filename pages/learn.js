@@ -1,9 +1,8 @@
-import Head from 'next/head';
+import Head from "next/head";
 
-import NavBar from '../components/NavBar';
-import LearnPage from '../components/LearnPage';
-import Footer from '../components/Footer';
-
+import NavBar from "../components/NavBar";
+import LearnPage from "../components/LearnPage";
+import Footer from "../components/Footer";
 
 export default function Learn() {
   return (
@@ -14,16 +13,17 @@ export default function Learn() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='content-center bg-gradient-to-r from-red-600 to-red-500 font-mono overflow-x-hidden'>
-        <div><NavBar /></div>
+      <main className="gradientbackground content-center font-mono overflow-x-hidden">
+        <div>
+          <NavBar />
+        </div>
         <div>
           <LearnPage />
         </div>
         <div>
           <Footer />
         </div>
-
       </main>
     </div>
-  )
+  );
 }
