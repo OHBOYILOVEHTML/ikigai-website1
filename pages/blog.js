@@ -12,8 +12,7 @@ export default function Blog() {
         <meta name="description" content="Charity Project" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="gradientbackground content-center font-mono overflow-x-hidden">
+      <main className="gradientbackground font-sans content-center overflow-x-hidden">
         <div>
           <NavBar />
         </div>
