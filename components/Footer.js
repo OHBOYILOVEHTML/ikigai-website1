@@ -1,8 +1,5 @@
-// Zach has comendeered this component- do not attempt to edit, no not make a merge error
 import Link from "next/link";
-import Image from "next/image";
-
-import logo from "../public/logo.webp";
+import { ImFacebook, ImLinkedin2, ImInstagram } from "react-icons/im";
 
 export default function Footer() {
   const instaLink = "https://www.instagram.com/lovenils1/";
@@ -14,47 +11,51 @@ export default function Footer() {
   const privacyPolicy = "https://www.lovenils.org/privacy-policy";
 
   return (
-    <div className="bg-white px-9 md:px-1 text-black text-center md:text-left">
-      <div className="flex flex-col md:flex-row lg:flex-row p-9 gap-x-1 sm:gap-x-15 md:gap-x-20 lg:gap-x-40 items-center justify-between">
-        <div className="flex flex-col">
-          <div className="w-48 md:w-24 lg:w-48">
-            <Image src={logo} alt="Ikigai Logo" />
+    <footer className="bg-gray-50">
+      <div className="container mx-auto flex justify-center py-12">
+        <div className="py-5">
+          <div className="flex gap-6 justify-center">
+            <Link href={facebookLink}>
+              <a>
+                <ImFacebook color="#888888"></ImFacebook>
+              </a>
+            </Link>
+            <Link href={instaLink}>
+              <a>
+                <ImInstagram color="#888888"></ImInstagram>
+              </a>
+            </Link>
+            <Link href={linkedinLink}>
+              <a>
+                <ImLinkedin2 color="#888888"></ImLinkedin2>
+              </a>
+            </Link>
           </div>
-          <p>Ikigai Project By Lovenils</p>
-        </div>
-        <div className="flex flex-col md:flex-row lg:flex-row gap-x-1 md:gap-x-20 lg:gap-x-20">
-          <div className="flex flex-col pt-5">
-            <h1 className="font-bold">
-              <Link href="/">Home</Link>
-            </h1>
-            <Link href={donationsLink}>For Donations</Link>
-            <Link href={volunteersLink}>For Volunteers</Link>
-          </div>
-
-          <div className="flex flex-col pt-5">
-            <h1 className="font-bold">
-              <Link href="/">About Us</Link>
-            </h1>
-            <Link href={lovenilsLink}>LoveNils</Link>
-            <Link href={privacyPolicy}>Cookies Policy</Link>
-          </div>
-
-          <div className="flex flex-col pt-5">
-            <h1 className="font-bold">
-              <Link href="/">Home</Link>
-            </h1>
-            <Link href="/learn">Learn</Link>
-            <Link href="/blog">Blog</Link>
-          </div>
-
-          <div className="flex flex-col pt-5">
-            <h1 className="font-bold">Social Media</h1>
-            <Link href={instaLink}>Instagram</Link>
-            <Link href={facebookLink}>Facebook</Link>
-            <Link href={linkedinLink}>LinkedIn</Link>
+          <div className="flex flex-row pt-5 text-gray-500 gap-8">
+            <div className="flex flex-col">
+              <h1 className="font-bold">
+                <Link href={"/"}>Home</Link>
+              </h1>
+              <Link href={donationsLink}>For Donations</Link>
+              <Link href={volunteersLink}>For Volunteers</Link>
+            </div>
+            <div className="flex flex-col">
+              <h1 className="font-bold">
+                <Link href="/">About Us</Link>
+              </h1>
+              <Link href={lovenilsLink}>LoveNils</Link>
+              <Link href={privacyPolicy}>Cookies Policy</Link>
+            </div>
+            <div className="flex flex-col">
+              <h1 className="font-bold">
+                <Link href="/">Home</Link>
+              </h1>
+              <Link href="/learn">Learn</Link>
+              <Link href="/blog">Blog</Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

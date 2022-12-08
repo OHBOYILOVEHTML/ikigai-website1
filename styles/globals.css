@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-nav a {
-  font-size: 18px;
-  font-weight: bold;
+* > * {
+  font-family: "Rubik", sans-serif;
 }
 
 .gradientbackground {
@@ -22,63 +23,5 @@ nav a {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  .logo {
-    display: none;
-  }
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
-.nav-bar .container .nav-menu {
-  position: fixed;
-  top: 95px;
-  left: 0;
-  width: 100%;
-  bottom: 0;
-  background: #fff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 40px 30px;
-  display: block;
-  overflow: scroll;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -o-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.nav-bar .container .nav-menu .menus ul.primary-routes > li {
-  text-align: right;
-  margin-bottom: 30px;
-}
-
-@media (min-width: 1280px) {
-  .nav-bar .container .nav-menu .menus ul.primary-routes > li {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    margin-bottom: 0;
-    margin-right: 45px;
-  }
-  .nav-bar .container .nav-menu .menus ul.primary-routes > li.has-submenu {
-    position: relative;
   }
 }

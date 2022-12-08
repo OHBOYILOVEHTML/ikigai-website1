@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import NavBar from "../components/NavBar";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BlogPage from "../components/BlogPage";
 
@@ -14,7 +14,7 @@ export default function Blog() {
       </Head>
       <main className="gradientbackground font-sans content-center overflow-x-hidden">
         <div>
-          <NavBar />
+          <Header />
         </div>
         <div>
           <BlogPage />

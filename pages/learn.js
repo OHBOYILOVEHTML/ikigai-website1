@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import NavBar from "../components/NavBar";
+import Header from "../components/Header";
 import LearnPage from "../components/LearnPage";
 import Footer from "../components/Footer";
 
@@ -14,7 +14,7 @@ export default function Learn() {
       </Head>
       <main className="gradientbackground font-sans content-center overflow-x-hidden">
         <div>
-          <NavBar />
+          <Header />
         </div>
         <div>
           <LearnPage />
