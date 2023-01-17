@@ -7,11 +7,14 @@ import SecondHero from "../components/SecondHero";
 import ThirdHero from "../components/ThirdHero";
 import InitialHero from "../components/InitialHero";
 
+// <Hero></Hero>
+// <Hero2></Hero2>
 export default function Home() {
   return (
     <Format>
-      <Hero></Hero>
-      <Hero2></Hero2>
+      <InitialHero/ >
+      <SecondHero/ >
+      <ThirdHero/ >
     </Format>
   );
 }
