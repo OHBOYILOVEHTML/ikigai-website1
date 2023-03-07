@@ -16,9 +16,6 @@ export default function Header() {
             <Link href={"/learn"}>
               <a>LEARN</a>
             </Link>
-            <Link href={"/blog"}>
-              <a>BLOG</a>
-            </Link>
           </div>
         </div>
         <div className="shrink w-80 sm:order-2">

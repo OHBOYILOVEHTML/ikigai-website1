@@ -45,14 +45,12 @@ export default function Footer() {
                   <Link href="/">About Us</Link>
                 </h1>
                 <Link href={lovenilsLink}>LoveNils</Link>
-                <Link href={privacyPolicy}>Cookies Policy</Link>
               </div>
               <div className="flex flex-col">
                 <h1 className="font-bold">
                   <Link href="/">Home</Link>
                 </h1>
                 <Link href="/learn">Learn</Link>
-                <Link href="/blog">Blog</Link>
               </div>
             </div>
           </div>

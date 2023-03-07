@@ -1,7 +1,6 @@
 import Link from "next/link";
 //import Image from "next/image";
 import { useRef } from "react";
-//import exampleCharity1 from "../images/exampleCharity1.jpg";
 
 export default function InitialHero() {
   // Use the useRef hook to create a reference to the element that you want to scroll to
@@ -26,7 +25,7 @@ export default function InitialHero() {
               </h2>
             </div>
             <div className="pt-8 flex flex-col gap-y-3 md:flex-row md:gap-x-10 justify-center leading-7">
-              <Link href={"/blog"}>
+              <Link href={"/learn"}>
                 <button className="font-semibold rounded-md py-3 px-4 border-solid border-2 border-black-300 hover:bg-gray-200">
                   Explore
                 </button>
