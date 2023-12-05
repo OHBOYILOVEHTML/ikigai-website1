@@ -3,25 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-* > * {
-  font-family: "Rubik", sans-serif;
-}
-
-.gradientbackground {
-  background: linear-gradient(270deg, #f10c0c, #f5181f, #f32308);
-  background-size: 600% 600%;
-  animation: AnimationName 15s ease infinite;
-}
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}

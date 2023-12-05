@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ImFacebook, ImLinkedin2, ImInstagram } from "react-icons/im";
 
 const SocialLink = ({ href, label, children }) => (
-  <Link href={href}>
+  <Link legacyBehavior href={href}>
     <a aria-label={label} className="text-gray-400 hover:text-gray-500">
       {children}
     </a>
@@ -30,7 +30,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-gray-100">
+      <footer className="bg-neutral-800">
         <div className="container mx-auto flex justify-center py-4">
           <div className="py-5">
             <div className="flex gap-6 justify-center">
@@ -41,18 +41,18 @@ export default function Footer() {
               ))}
             </div>
             <nav className="flex flex-row pt-5 text-gray-400 gap-8">
-              <Link href="/">
+              <Link legacyBehavior href="/">
                 <a className="hover:text-gray-500">Home</a>
               </Link>
-              <Link href="/learn">
+              <Link legacyBehavior href="/learn">
                 <a className="hover:text-gray-700">Learn</a>
               </Link>
             </nav>
           </div>
         </div>
       </footer>
-      <footer className="py-6 text-center bg-blue-700 text-white">
-        Designed by PLACEHOLDER
+      <footer className="py-6 text-center bg-neutral-900 text-white">
+        Designed by HSB
       </footer>
     </>
   );
