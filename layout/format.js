@@ -6,11 +6,9 @@ export default function format({ children }) {
   return (
     <>
       <Head>
-        <title>Ikigai Project</title>
+        <title>CCAS</title>
       </Head>
-      <Header></Header>
       <main>{children}</main>
-      <Footer></Footer>
     </>
   );
 }

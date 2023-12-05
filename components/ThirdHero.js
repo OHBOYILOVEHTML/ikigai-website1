@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-import exampleCharity1 from "../images/exampleCharity1.jpg";
-
 export default function SecondHero() {
   const h1Content = "Contact Us";
   const pContent =

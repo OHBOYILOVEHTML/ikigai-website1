@@ -13,11 +13,11 @@ export default function InitialHero() {
 
   var message = "New blog post out now!";
   return (
-    <section className="relative flex min-h-screen flex-col justify-center md:justify-start pt-20 overflow-hidden">
-      <div className="relative bg-white px-6 pt-10 pb-10 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+    <section className="relative flex min-h-screen flex-col justify-center md:justify-start pt-20 overflow-hidden bg-slate-700">
+      <div className="relative bg-slate-700 px-6 pt-10 pb-10 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
         <div className="mx-auto max-w-md">
           <div className="divide-y divide-gray-300/50">
-            <div className="pd-9 px-3 space-y-3 text-base leading-7 text-gray-900 text-center sm:text-left">
+            <div className="pd-9 px-3 space-y-3 text-base leading-7 text-sky-100 text-center sm:text-left">
               <h2>{message}</h2>
               <h1 className="text-7xl font-bold">THE IKIGAI PROJECT</h1>
               <h2 className="text-4xl pb-8">

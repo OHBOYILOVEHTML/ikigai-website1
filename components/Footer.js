@@ -1,65 +1,58 @@
 import Link from "next/link";
 import { ImFacebook, ImLinkedin2, ImInstagram } from "react-icons/im";
 
+const SocialLink = ({ href, label, children }) => (
+  <Link href={href}>
+    <a aria-label={label} className="text-gray-400 hover:text-gray-500">
+      {children}
+    </a>
+  </Link>
+);
+
 export default function Footer() {
-  const instaLink = "https://www.instagram.com/lovenils1/";
-  const facebookLink = "https://www.facebook.com/LOVENILS/";
-  const linkedinLink = "https://www.linkedin.com/company/lovenils/";
-  const lovenilsLink = "https://www.lovenils.org/";
-  const donationsLink = "https://www.giving.sg/campaigns/theikigaiproject2023";
-  const volunteersLink = "https://www.lovenils.org/volunteer";
-  const privacyPolicy = "https://www.lovenils.org/privacy-policy";
+  const socialLinks = [
+    {
+      href: "https://www.instagram.com/lovenils1/",
+      icon: <ImInstagram />,
+      label: "Instagram",
+    },
+    {
+      href: "https://www.facebook.com/LOVENILS/",
+      icon: <ImFacebook />,
+      label: "Facebook",
+    },
+    {
+      href: "https://www.linkedin.com/company/lovenils/",
+      icon: <ImLinkedin2 />,
+      label: "LinkedIn",
+    },
+  ];
 
   return (
     <>
-      <footer className="bg-gray-50">
-        <div className="container mx-auto flex justify-center py-12">
+      <footer className="bg-gray-100">
+        <div className="container mx-auto flex justify-center py-4">
           <div className="py-5">
             <div className="flex gap-6 justify-center">
-              <Link href={facebookLink}>
-                <a>
-                  <ImFacebook color="#888888"></ImFacebook>
-                </a>
-              </Link>
-              <Link href={instaLink}>
-                <a>
-                  <ImInstagram color="#888888"></ImInstagram>
-                </a>
-              </Link>
-              <Link href={linkedinLink}>
-                <a>
-                  <ImLinkedin2 color="#888888"></ImLinkedin2>
-                </a>
-              </Link>
+              {socialLinks.map(({ href, icon, label }) => (
+                <SocialLink key={href} href={href} label={label}>
+                  {icon}
+                </SocialLink>
+              ))}
             </div>
-            <div className="flex flex-row pt-5 text-gray-500 gap-8">
-              <div className="flex flex-col">
-                <h1 className="font-bold">
-                  <Link href={"/"}>Home</Link>
-                </h1>
-                <Link href={donationsLink}>For Donations</Link>
-                <Link href={volunteersLink}>For Volunteers</Link>
-              </div>
-              <div className="flex flex-col">
-                <h1 className="font-bold">
-                  <Link href="/">About Us</Link>
-                </h1>
-                <Link href={lovenilsLink}>LoveNils</Link>
-              </div>
-              <div className="flex flex-col">
-                <h1 className="font-bold">
-                  <Link href="/">Home</Link>
-                </h1>
-                <Link href="/learn">Learn</Link>
-              </div>
-            </div>
+            <nav className="flex flex-row pt-5 text-gray-400 gap-8">
+              <Link href="/">
+                <a className="hover:text-gray-500">Home</a>
+              </Link>
+              <Link href="/learn">
+                <a className="hover:text-gray-700">Learn</a>
+              </Link>
+            </nav>
           </div>
         </div>
       </footer>
-      <footer>
-        <div className="py-6 text-center bg-red-500 font-bold text-white">
-          Designed by the Ikigai Project Team
-        </div>
+      <footer className="py-6 text-center bg-blue-700 text-white">
+        Designed by PLACEHOLDER
       </footer>
     </>
   );
