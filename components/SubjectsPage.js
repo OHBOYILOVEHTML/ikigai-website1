@@ -34,9 +34,10 @@ export default function MainComp() {
         }}
         className="absolute top-0 left-0 h-full w-full z-0"
       />
-      <div className="md:px-56 hover:text-7xl transition-all text-center md:text-start pt-32 pb-10 z-10">
+      <div className="md:px-56 hover:text-7xl transition-all text-center md:text-start pt-32 z-10">
         <Link href={"../"}>{"<-"}</Link>
       </div>
+      <div className="text-5xl pb-10 text-center">Subjects</div>
       <div className="pb-10 flex flex-col items-center gap-4 relative">
         {["MAI", "MAA", "Physics", "Chemistry"].map((item) => (
           <Link key={item} href={`subjects/${item.toLowerCase()}`}>

@@ -7,10 +7,10 @@ export default function MainComp() {
 
   const handleMouseEnter = (item) => {
     const positions = {
-      MAI: "0% 20%",
-      MAA: "0% 40%",
-      Physics: "0% 60%",
-      Chemistry: "0% 80%",
+      Notes: "0% 20%",
+      Questions: "0% 20%",
+      Upload: "0% 40%",
+      Request: "0% 40%",
     };
     setBackgroundPosition(positions[item]);
     setHoveredItem(item);
@@ -33,8 +33,11 @@ export default function MainComp() {
         }}
         className="absolute top-0 left-0 h-full w-full z-0"
       />
-      <div className="md:px-56 hover:text-7xl transition-all text-center md:text-start pt-32 pb-10 z-10">
+      <div className="flex flex-row text-center md:text-start pt-32 z-10 md:pl-56 hover:text-7xl transition-all">
         <Link href={"./"}>{"<-"}</Link>
+      </div>
+      <div className="text-5xl pb-10 text-center">
+        Mathematics Analysis and Approaches
       </div>
       <div className="pb-10 md:grid md:grid-cols-2 flex flex-col overflow-hidden place-items-center gap-4 relative">
         {["Notes", "Questions", "Upload", "Request"].map((item) => {
