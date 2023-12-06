@@ -21,7 +21,7 @@ export default function MainComp() {
   };
 
   return (
-    <div className="menu bg-neutral-800 text-white h-screen flex flex-col justify-center text-6xl relative">
+    <div className="bg-neutral-800 text-white font-bold min-h-screen flex flex-col justify-center text-6xl relative">
       <div
         id="menu-background-pattern"
         style={{
@@ -31,7 +31,7 @@ export default function MainComp() {
           backgroundSize: "12vmin 12vmin",
           transition: "background-position 500ms ease",
         }}
-        className="absolute top-0 left-0 h-full w-full z-0"
+        className="absolute top-0 left-0 h-full min-h-screen w-full z-0"
       />
 
       <div className="md:px-56 relative flex flex-col items-center md:items-start">
@@ -42,7 +42,7 @@ export default function MainComp() {
             href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
           >
             <a
-              className={`menu-item py-5 transition-opacity duration-500 ${
+              className={`menu-item hover:text-7xl transition-all py-5 duration-500 ${
                 hoveredItem && hoveredItem !== item
                   ? "opacity-50"
                   : "opacity-100"

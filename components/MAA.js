@@ -7,10 +7,10 @@ export default function MainComp() {
 
   const handleMouseEnter = (item) => {
     const positions = {
-      MAI: "0% 10%",
-      MAA: "0% 20%",
-      Physics: "0% 30%",
-      Chemistry: "0% 40%",
+      MAI: "0% 20%",
+      MAA: "0% 40%",
+      Physics: "0% 60%",
+      Chemistry: "0% 80%",
     };
     setBackgroundPosition(positions[item]);
     setHoveredItem(item);
@@ -24,7 +24,6 @@ export default function MainComp() {
   return (
     <div className="bg-neutral-800 font-bold text-white flex flex-col min-h-screen justify-center text-6xl relative">
       <div
-        id="menu-background-pattern"
         style={{
           backgroundImage:
             "radial-gradient(rgba(255, 255, 255, 0.1) 9%, transparent 9%)",
@@ -35,24 +34,30 @@ export default function MainComp() {
         className="absolute top-0 left-0 h-full w-full z-0"
       />
       <div className="md:px-56 hover:text-7xl transition-all text-center md:text-start pt-32 pb-10 z-10">
-        <Link href={"../"}>{"<-"}</Link>
+        <Link href={"./"}>{"<-"}</Link>
       </div>
-      <div className="pb-10 flex flex-col items-center gap-4 relative">
-        {["MAI", "MAA", "Physics", "Chemistry"].map((item) => (
-          <Link key={item} href={`subjects/${item.toLowerCase()}`}>
-            <a
-              className={`text-center transition-opacity w-8/12 drop-shadow bg-opacity-20 bg-neutral-700 border border-neutral-700 rounded-lg py-20 duration-500 ${
-                hoveredItem && hoveredItem !== item
-                  ? "opacity-50"
-                  : "opacity-100"
-              }`}
-              onMouseEnter={() => handleMouseEnter(item)}
-              onMouseLeave={handleMouseLeave}
-            >
-              {item}
-            </a>
-          </Link>
-        ))}
+      <div className="pb-10 md:grid md:grid-cols-2 flex flex-col overflow-hidden place-items-center gap-4 relative">
+        {["Notes", "Questions", "Upload", "Request"].map((item) => {
+          const justifyClass =
+            item === "Notes" || item === "Upload"
+              ? "justify-self-end"
+              : "justify-self-start";
+          return (
+            <Link key={item} href={`maa/${item.toLowerCase()}`}>
+              <a
+                className={`text-center transition-opacity w-8/12 drop-shadow bg-opacity-20 bg-neutral-700 border border-neutral-700 rounded-lg py-20 duration-500 ${justifyClass} ${
+                  hoveredItem && hoveredItem !== item
+                    ? "opacity-50"
+                    : "opacity-100"
+                }`}
+                onMouseEnter={() => handleMouseEnter(item)}
+                onMouseLeave={handleMouseLeave}
+              >
+                {item}
+              </a>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

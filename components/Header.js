@@ -32,9 +32,7 @@ export default function Header() {
   const titleName = "Placeholder";
 
   return (
-    <header className="drop-shadow bg-opacity-20 bg-neutral-700 border-b border-neutral-700 text-white font-bold uppercase z-10 fixed w-full" style={{
-      backdropFilter: "blur(5px)",
-    }}>
+    <header className="backdrop-blur-sm drop-shadow bg-opacity-20 bg-neutral-700 border-b border-neutral-700 text-white font-bold uppercase z-20 fixed w-full">
       <div className="xl:container xl:mx-auto flex flex-col items-center sm:flex-row sm:justify-between text-center py-8">
         <div className="shrink w-80 sm:order-2">
           <Link legacyBehavior href={"/"}>
@@ -61,4 +59,4 @@ export default function Header() {
       </div>
     </header>
   );
-};
+}
