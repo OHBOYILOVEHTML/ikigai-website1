@@ -52,7 +52,11 @@ export default function Footer() {
         </div>
       </footer>
       <footer className="py-6 text-center bg-neutral-900 text-white">
-        Designed by HSB
+        <a>
+          Designed by HSB
+          <br />
+        </a>
+        <a>If there are any concerns, please contact harry43804570@gmail.com</a>
       </footer>
     </>
   );

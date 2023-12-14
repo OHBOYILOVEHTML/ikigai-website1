@@ -9,8 +9,6 @@ export default function MainComp() {
     const positions = {
       MAI: "0% 10%",
       MAA: "0% 20%",
-      Physics: "0% 30%",
-      Chemistry: "0% 40%",
     };
     setBackgroundPosition(positions[item]);
     setHoveredItem(item);
@@ -39,7 +37,7 @@ export default function MainComp() {
       </div>
       <div className="text-5xl pb-10 text-center">Subjects</div>
       <div className="pb-10 flex flex-col items-center gap-4 relative">
-        {["MAI", "MAA", "Physics", "Chemistry"].map((item) => (
+        {["MAI", "MAA"].map((item) => (
           <Link key={item} href={`subjects/${item.toLowerCase()}`}>
             <a
               className={`text-center transition-opacity w-8/12 drop-shadow bg-opacity-20 bg-neutral-700 border border-neutral-700 rounded-lg py-20 duration-500 ${
